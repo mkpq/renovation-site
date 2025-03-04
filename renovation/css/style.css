@@ -1,0 +1,935 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  font-family: "Noto Sans JP", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 0.1em;
+  max-width: 767px;
+  max-height: 524px;
+}
+
+.ff_notoserif {
+  font-family: "Noto Serif JP", serif;
+}
+
+/* header */
+header h1 {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-left: 12px;
+  padding-bottom: 16px;
+}
+
+header .menu {
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+header .menu li a:hover {
+  background-color: #223e6933;
+}
+
+header .pc_menu {
+  display: none;
+}
+
+/* main */
+.top_ph {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.top_ph_pc {
+  display: none
+}
+
+/* title */
+main h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+main .sub_title {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: #223e69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+main .sub_title::before,
+main .sub_title::after {
+  content: '';
+  width: 60.5px;
+  height: 1px;
+  background-color: #223e69
+}
+
+main .sub_title::before {
+  margin-right: 5px;
+}
+
+main .sub_title::after {
+  margin-left: 5px;
+}
+
+/* CONCEPT */
+.concept_sec {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 80px;
+}
+
+.concept_sec h3 {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.concept_sec p {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  padding-left: 1.4px;
+}
+
+/* SERVICE */
+.service_sec {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 80px;
+}
+
+.service_detail_sec {
+  margin-bottom: 48px;
+}
+
+.service_detail_sec img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.service_detail_sec h3 {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.service_detail_sec p {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.more {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  display: flex;
+  align-items: end;
+  max-width: 55px;
+  margin: 0 0 0 auto;
+}
+
+.more::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: #333;
+  margin-left: 5px;
+}
+
+
+
+.service_detail_sec a:hover>span {
+  text-decoration: underline solid;
+
+}
+
+.service_detail_sec:hover {
+  opacity: 0.5;
+}
+
+
+
+/* FLOW */
+.flow_sec {
+  background-color: #223e690d;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 80px;
+}
+
+.flow_sec .sub_title {
+  color: #b71b26;
+}
+
+.flow_sec .sub_title::before,
+.flow_sec .sub_title::after {
+  background-color: #b71b26;
+}
+
+.flow_sec .item {
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+  width: 300px;
+  height: 32px;
+  text-align: center;
+  flex-basis: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  margin-top: -8px;
+  border-radius: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.flow_sec .item:first-of-type {
+  margin-top: 24px;
+}
+
+.flow_sec .arrow01,
+.flow_sec .arrow02,
+.flow_sec .arrow03,
+.flow_sec .arrow04,
+.flow_sec .arrow05 {
+  border: 16px solid transparent;
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flow_sec .arrow01 {
+  border-top-color: #b71b2699;
+}
+
+.flow_sec .arrow02 {
+  border-top-color: #b71b26b3;
+}
+
+.flow_sec .arrow03 {
+  border-top-color: #b71b26cc;
+}
+
+.flow_sec .arrow04 {
+  border-top-color: #b71b26e6;
+}
+
+.flow_sec .arrow05 {
+  border-top-color: #b71b26;
+}
+
+/* Q&A */
+.faq_sec {
+  margin: 0 12px 80px 12px;
+}
+
+.faq_sec p {
+  line-height: 1.5;
+}
+
+.faq_sec .faq_detail {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.faq_sec .question,
+.faq_sec .answer {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  line-height: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 52px;
+  margin-right: 8px;
+  flex-basis: 36px;
+  padding: 5px;
+}
+
+.faq_sec .question {
+  background-color: #333;
+}
+
+.faq_sec .answer {
+  background-color: #b71b26;
+}
+
+.faq_sec .question p,
+.faq_sec .answer p {
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+
+.faq_sec .faq1 {
+  margin-bottom: 24px;
+}
+
+.faq_sec .faq_sentence {
+  margin-top: 3px;
+}
+
+/* CONTACT */
+.contact_sec {
+  background-color: #223e6926;
+  padding-top: 16px;
+  text-align: center;
+  margin-bottom: 126px;
+
+}
+
+.contact_sec .contact_title {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.column {
+  margin-bottom: 24px;
+  margin-right: 12px;
+}
+
+.contact_sec .compulsory {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #b71b26;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  height: 18px;
+  border-radius: 8px;
+  padding: 4px 9.5px;
+}
+
+.contact_sec .type {
+  margin-bottom: 16px;
+}
+
+.contact_sec .radiobtn {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-weight: 400;
+}
+
+input[type="radio"] {
+  vertical-align: baseline;
+
+  /* radio btn custom */
+  display: none;
+}
+
+
+.radio_label {
+  position: relative;
+  padding: 0 0 0 38px;
+}
+
+.radio_label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 19px;
+  margin-top: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #223e69b3;
+  opacity: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.radio_label::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+input[type=radio]:checked+.radio_label:before {
+  opacity: 1;
+}
+
+.contact_sec .btn1 {
+  margin-right: 18px;
+}
+
+.contact_sec input[type="text"],
+.contact_sec input[type="email"],
+textarea {
+  background-color: #fff;
+  margin-top: 8px;
+  margin-left: 12px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.contact_sec input[type="text"],
+.contact_sec input[type="email"] {
+  height: 32px;
+}
+
+.contact_sec input[name="user_name"],
+.contact_sec input[name="user_name_ruby"],
+.contact_sec input[name="user_phone_number"],
+.contact_sec input[name="user_address"],
+.contact_sec input[type="email"],
+textarea {
+  width: 98%;
+}
+
+textarea {
+  height: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact_sec input[name="user_post_code"] {
+  width: 34%;
+  margin-left: 0;
+}
+
+.post_code {
+  text-align: left;
+  margin-left: 12px;
+}
+
+input[type="submit"] {
+  color: #fff;
+  padding: 16px 20px 16px 16px;
+  margin-bottom: 24px;
+  background: #333 url(../images/arrow.png) no-repeat 94% 52%/6px 12px;
+}
+
+input[type="submit"]:hover {
+  background-color: #b71b26;
+  transform: scale(1.1);
+  transition-property: background-color, transform;
+  transition-duration: 600ms;
+}
+
+
+/* footer */
+footer small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+footer a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: #333;
+  position: fixed;
+  bottom: 45px;
+  right: 12px;
+}
+
+.arrow06 {
+  display: inline-block;
+  border: 2px solid;
+  border-left-color: #fff;
+  border-bottom-color: #fff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(135deg);
+  position: relative;
+  top: 17px;
+  left: 13px;
+}
+
+/* drawer menu*/
+/* menu fixed */
+.g_menu {
+  /* 右上に固定・前面表示 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+/* input 要素 チェックボックスを非表示 */
+.menu_btn {
+  display: none;
+}
+
+/* label 要素 アイコン作成 */
+.menu_icon {
+  /* 右上に絶対配置 */
+  position: absolute;
+  right: 12px;
+  top: 20px;
+  height: 20px;
+  padding-top: 5px;
+  /* ポインターの形状 指 */
+  cursor: pointer;
+}
+
+/* span 要素 中央の線作成 */
+.navicon {
+  /* ブロックレベルへ変更 */
+  display: block;
+  /* 線の長さ */
+  width: 31px;
+  /* 線の太さ */
+  height: 2px;
+  /* 線の色 */
+  background: #b71b26;
+  /* ::before と ::after の基準要素 */
+  position: relative;
+}
+
+/* 上と下の線作成 上下共通 */
+.navicon::before,
+.navicon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #b71b26;
+  /* 基準要素 span.navicon に対して絶対配置 */
+  position: absolute;
+  /* 三本線と X の切替えアニメーション 速く始まりゆっくり終わる */
+  transition: all .4s ease-out;
+}
+
+/* 下の線のみ */
+.navicon::before {
+  /* 上からの位置 */
+  top: 10px;
+}
+
+/* 上の線のみ */
+.navicon::after {
+  /* 上へ 10px の位置 */
+  top: -10px;
+}
+
+/* ul 要素 メニュー */
+.menu {
+  background-color: #ffffffe6;
+  text-align: center;
+  /* 非表示 */
+  overflow: hidden;
+  /* 最大の高さ */
+  max-height: 0px;
+  /* 非表示の際のアニメーション */
+  transition: max-height 0.6s;
+}
+
+/* 1 つ目の li 要素 */
+.menu li:first-of-type {
+  padding-top: 56px;
+}
+
+/* a 要素 */
+.menu a {
+  display: block;
+  padding: 24px 20px;
+}
+
+/* ↓チェックボックスが ON の場合 */
+/* 非表示にしていた ul.menu を表示 */
+.menu_btn:checked~.menu {
+  max-height: 375px;
+  /* 元 0px */
+  /* 表示の際のアニメーション */
+  transition: max-height 0.6s;
+}
+
+/* 中央の線を非表示 */
+.menu_btn:checked~.menu_icon .navicon {
+  background: transparent;
+  /* 元 #333 */
+}
+
+/* 上下の線を 45 度傾けて X アイコンを作成 */
+.menu_btn:checked~.menu_icon .navicon::before {
+  /* 反時計回りに回転 */
+  transform: rotate(-45deg);
+  top: 0;
+  /* 元 10px */
+}
+
+.menu_btn:checked~.menu_icon .navicon::after {
+  /* 時計回りに回転 */
+  transform: rotate(45deg);
+  top: 0;
+  /* 元 -10px */
+}
+
+/* 768px以上 */
+@media screen and (min-width:768px) {
+
+  /* common */
+  body {
+    max-width: 1080px;
+  }
+
+  .content_area {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* header */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    padding: 24px;
+  }
+
+  .g_menu {
+    display: none;
+  }
+
+  header .pc_menu {
+    display: block;
+    flex-basis: 630px;
+    line-height: 1;
+    font-weight: 500;
+    padding-top: 28px;
+    font-size: 1.17vw
+  }
+
+  header .pc_menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header .pc_menu a:hover {
+    text-decoration: underline solid 3px #b71b26b3;
+  }
+
+  /* main */
+  .top_ph {
+    display: none;
+  }
+
+  .top_ph_pc {
+    display: block;
+    width: 100%;
+    margin-bottom: 160px;
+  }
+
+  .concept_sec,
+  .service_sec,
+  .flow_sec,
+  .faq_sec,
+  .contact_sec {
+    margin-bottom: 160px;
+  }
+
+
+  /* title */
+  main h2 {
+    font-size: 42px;
+    letter-spacing: 0.1em;
+    margin-bottom: 48px;
+  }
+
+  main .sub_title {
+    margin-top: 16px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+  }
+
+  /* CONCEPT */
+  .concept_sec {
+    flex-basis: 1020px;
+  }
+
+  /* SERVICE */
+  .service_sec .service {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .service_sec .service_detail_sec {
+    width: 30%;
+  }
+
+  .service_detail_sec img {
+    margin-bottom: 16px;
+  }
+
+  .service_detail_sec h3 {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+
+  .service_detail_sec p {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+
+  .service_detail_sec:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 700ms;
+  }
+
+  /* FLOW */
+  .flow_sec {
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+
+  .flow_sec ol {
+    display: flex;
+  }
+
+  .flow_sec .item {
+    writing-mode: vertical-rl;
+    width: 60px;
+    height: 280px;
+    flex-basis: 60px;
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .flow_sec .item:first-of-type {
+    margin-top: 0px;
+  }
+
+  .flow_sec .arrow01,
+  .flow_sec .arrow02,
+  .flow_sec .arrow03,
+  .flow_sec .arrow04,
+  .flow_sec .arrow05 {
+    height: 60px;
+    border: 30px solid transparent;
+    margin-top: 109px;
+    margin-right: -3%;
+    margin-left: 2%
+  }
+
+  .flow_sec .arrow01 {
+    border-top-color: transparent;
+    border-left-color: #b71b2699;
+  }
+
+  .flow_sec .arrow02 {
+    border-top-color: transparent;
+    border-left-color: #b71b26b3;
+  }
+
+  .flow_sec .arrow03 {
+    border-top-color: transparent;
+    border-left-color: #b71b26cc;
+  }
+
+  .flow_sec .arrow04 {
+    border-top-color: transparent;
+    border-left-color: #b71b26e6;
+  }
+
+  .flow_sec .arrow05 {
+    border-top-color: transparent;
+    border-left-color: #b71b26;
+  }
+
+  /* Q&A */
+  .faq_sec .faq1 {
+    margin-bottom: 48px;
+  }
+
+  .faq_sec .faq_sentence {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+  }
+
+  .faq_sec .question p,
+  .faq_sec .answer p {
+    font-size: 34px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    padding-top: 3px;
+  }
+
+  .faq_sec .question,
+  .faq_sec .answer {
+    width: 50px;
+    height: 52px;
+  }
+
+  /* CONTACT */
+  .contact_sec {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .contact_sec .content_area {
+    background-color: #ffffff80;
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .contact_sec p {
+    margin-left: 0;
+  }
+
+  .column {
+    display: flex;
+    margin-right: 12px;
+  }
+
+  .contact_title {
+    flex-basis: 336px;
+    text-align: right;
+    margin: 0;
+    margin-right: 12px;
+    margin-left: 0;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .contact_title .compulsory {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    width: 58px;
+    height: 24px;
+  }
+
+  .contact_sec .radiobtn {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-left: -10px;
+  }
+
+  .contact_sec input[name="user_name"],
+  .contact_sec input[name="user_name_ruby"],
+  .contact_sec input[name="user_phone_number"],
+  .contact_sec input[name="user_post_code"],
+  .contact_sec input[name="user_address"],
+  .contact_sec input[name="user_mail"],
+  .contact_sec input[name="user_mail_repeat"] {
+    height: 52px;
+
+  }
+
+  .contact_sec input[name="user_name"],
+  .contact_sec input[name="user_name_ruby"],
+  .contact_sec input[name="user_phone_number"] {
+    width: 35%;
+    margin: 0;
+  }
+
+  .contact_sec .address_area {
+    display: block;
+    width: 65%
+  }
+
+
+  .contact_sec .post_code {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .contact_sec input[name="user_post_code"] {
+    width: 30%;
+    margin-top: 0;
+  }
+
+  .contact_sec input[name="user_address"] {
+    margin-bottom: 0px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .contact_sec input[name="user_mail"],
+  .contact_sec input[name="user_mail_repeat"],
+  .contact_sec textarea {
+    width: 65%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .contact_sec textarea {
+    height: 208px;
+    margin-bottom: 24px;
+  }
+
+  .contact_sec input[type="submit"] {
+    padding: 24px 61px 24px 43px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    background: #333 url(../images/arrow.png) no-repeat 85% 52%/9.6px 19.2px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #b71b26;
+    transform: scale(1.1);
+    transition-property: background-color, transform;
+    transition-duration: 600ms;
+  }
+
+
+}
+
+/* 1080px以上 */
+@media screen and (min-width:1080px) {
+
+  /* common */
+  body {
+    max-width: 100%;
+  }
+
+
+
+}
